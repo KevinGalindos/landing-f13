@@ -1,0 +1,95 @@
+.BannerAboutUs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url("../assets/images/Background-Shapes/wave-white.png");
+  background-color: #f2f2f2;
+  background-size: 100% 100%;
+  position: relative;
+  height: 611px;
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+  }
+
+  .logo {
+    padding: 30px 50px;
+    padding-bottom: 0;
+  }
+  .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 4%;
+
+    &_image {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+    }
+
+    &_text {
+      display: flex;
+      width: 55%;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      .title {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 10%;
+        .primary-title {
+          color: $Main-Color;
+        }
+        .paragraphs {
+          padding: 0px 7%;
+          color: $Main-Color;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $break-point-mobile) {
+  .BannerAboutUs {
+    height: 100%;
+    background-image: none;
+
+    .banner {
+      height: 950px;
+      .logo {
+        padding: 10px 20px;
+      }
+    }
+
+    .box {
+      flex-direction: column;
+      height: 800px;
+
+      &_image {
+        width: 100%;
+
+        img {
+          width: 80%;
+        }
+      }
+      &_text {
+        width: 100%;
+
+        .title {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

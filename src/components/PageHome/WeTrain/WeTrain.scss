@@ -1,0 +1,73 @@
+.WeTrain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url("../assets/images/Background-Shapes/top-left-2x.png");
+  background-color: $background-primary;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  .box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5%;
+    height: 750px;
+
+    &_text {
+      display: flex;
+      justify-content: space-around;
+      height: 40%;
+      .title {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+        .primary-title {
+          color: $background-secondary;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $break-point-mobile) {
+  .WeTrain {
+    background-image: none;
+    .box {
+      padding: 40px 20px;
+      flex-direction: column;
+      height: 900px;
+      justify-content: space-evenly;
+      height: auto;
+      &_text {
+        height: auto;
+        .title {
+          gap: 20px;
+      }
+      }
+      &-button {
+        left: -45%;
+        top: 0;
+      }
+
+      &_image {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        img {
+          width: 80% !important;
+        }
+      }
+
+      &-img {
+        display: flex;
+        justify-content: center;
+        img {
+          width: 80% !important;
+        }
+      }
+    }
+  }
+}

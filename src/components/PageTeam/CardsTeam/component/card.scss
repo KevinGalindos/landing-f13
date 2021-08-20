@@ -1,0 +1,86 @@
+.card-member-team {
+  background: #fefefe;
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  box-shadow: 11px 8px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 30px;
+  width: 885px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+
+  .paragraphs {
+    color: $Main-Color;
+    margin: 5px 0;
+  }
+  .mini-texts {
+    color: $Main-Color;
+    margin: 5px 0;
+  }
+  
+
+  &__profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0.7;
+    img {
+      border-radius: 50%;
+      margin: 5px 0;
+      height: 137px;
+      width: 137px;
+    }
+
+    .content-icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      img {
+        margin: 0 2px;
+        height: 41px;
+        width: 41px;
+      }
+    }
+  }
+  
+  &__projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding: 0 40px;
+    .short-texts {
+      color: $Main-Color;
+      margin: 20px 0;
+    }
+    .slick-slide{
+      width: auto !important;
+    }
+    .brands{
+      height: 70px;
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 5px 0;
+     
+      img{
+        width: auto;
+        height: 60px;
+        margin: 0 8px;
+      }
+    }
+  }
+
+
+  @media (max-width: $break-point-mobile) {
+    flex-direction: column;
+    width: auto;
+  }
+}

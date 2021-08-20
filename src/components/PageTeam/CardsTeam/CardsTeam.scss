@@ -1,0 +1,17 @@
+.cards-team{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+  background-image: url("../assets/images/Background-Shapes/top-left-bottom-right.png");
+  background-color: $background-primary;
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  padding: 10% 0;
+
+
+  .primary-title{
+    text-align: right;
+    color: #001A4B;
+  }
+}

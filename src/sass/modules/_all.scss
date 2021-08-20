@@ -1,0 +1,53 @@
+//pages
+@import "../../pages/home/index.scss";
+
+//components PAGE HOME
+@import "../../components/PageHome/BannerHome/BannerHome.scss";
+@import "../../components/PageHome/OurClients/OurClients.scss";
+@import "../../components/PageHome/WhatDoWeDo/WhatDoWeDo.scss";
+@import "../../components/PageHome/WeTrain/WeTrain.scss";
+@import "../../components/PageHome/Quotation/Quotation.scss";
+
+
+//PAGE PROFILE
+@import "../../components/PageProfile/BannerProfile/BannerProfile.scss";
+@import "../../components/PageProfile/JobsProfile/JobsProfile.scss";
+@import "../../components/PageProfile/JobsProfile/components/CardJob/CardJob.scss";
+@import "../../components/PageProfile/WhyChoose/WhyChoose.scss";
+
+
+//PAGE TEAM
+@import "../../components/PageTeam/CardsTeaching/CardsTeaching.scss";
+@import "../../components/PageTeam/BannerTeam/BannerTeam.scss";
+@import "../../components/PageTeam/CardsTeam/CardsTeam.scss";
+@import "../../components/PageTeam/CardsTeam/component/card.scss";
+@import "../../components/PageTeam/CardsTeam/component/RolButtons/RolButtons.scss";
+
+
+//PAGE ABOUT US
+@import "../../components/PageAboutUs/BannerAboutUs/BannerAboutUs.scss";
+@import "../../components/PageAboutUs/Cards/Cards.scss";
+@import "../../components/PageAboutUs/Interesting/Interesting.scss";
+@import "../../components/PageAboutUs/WhoToTrain/WhoToTrain.scss";
+
+
+
+//PAGE ABOUT US2
+@import "../../components/PageAboutUs2/BannerAboutUs2/BannerAboutUs2.scss";
+@import "../../components/PageAboutUs2/WhatWeDo2/WhatWeDo2.scss";
+@import "../../components/PageAboutUs2/Clients/Clients.scss";
+@import "../../components/PageAboutUs2/Clients/components/ClientCard/ClientCard.scss";
+@import "../../components/PageAboutUs2/Reviews/Reviews.scss";
+@import "../../components/PageAboutUs2/Reviews/components/ReviewsCard/ReviewsCard.scss";
+
+
+
+
+
+@import "../../components/Forms/FormWeTrain/FormWeTrain.scss";
+
+
+@import "../../components/Header/Header.scss";
+@import "../../components/Footer/Footer.scss";
+@import "../../components/knowus/knowus.scss";
+

@@ -1,0 +1,36 @@
+.knwowus{
+    width: 100%;
+    background: #FEFEFE;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h2{
+        color:$Main-Color;
+        margin: 20px 0;
+    }
+
+    button {
+      width: 116px;
+      height: 40px;
+      background: transparent;
+      border: 2px solid $Main-Color;
+      color: $Main-Color;
+      font-weight: bold;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    button:hover{
+        color:$Main-Color ;
+        border: 2px solid $Main-Color;
+    }
+  }

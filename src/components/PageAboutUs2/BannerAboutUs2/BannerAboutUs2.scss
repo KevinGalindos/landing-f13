@@ -1,0 +1,90 @@
+.BannerAboutUs2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url("../assets/images/Background-Shapes/wave-invert.png");
+  background-color: #f2f2f2;
+  background-size: 100% 100%;
+  position: relative;
+  height: 611px;
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+  }
+
+  .logo {
+    padding: 30px 50px;
+    padding-bottom: 0;
+  }
+
+  .box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 5%;
+
+    &_image {
+      display: flex;
+      justify-content: center;
+    }
+
+    &_text {
+      display: flex;
+      width: 45%;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      .title {
+        display: flex;
+        text-align: left;
+        .primary-title {
+          color: $Main-Color;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: $break-point-mobile) {
+  .BannerAboutUs2 {
+    height: 640px;
+    background-image: none;
+
+    .banner {
+      height: 100%;
+      .logo {
+        padding:20px;
+      }
+    }
+
+    .box {
+      flex-direction: column;
+      height: 100%;
+
+      &_image {
+        width: 100%;
+
+        img {
+          width: 80%;
+        }
+      }
+      &_text {
+        width: 100%;
+        height: auto;
+
+        .title {
+          padding: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

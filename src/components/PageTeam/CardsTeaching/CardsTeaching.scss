@@ -1,0 +1,193 @@
+.CardsTeaching {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/images/Background-Shapes/curve-white.png");
+  background-size: 100% 100%;
+  height: 1120px;
+  background-color: #00027a;
+
+  .box-button {
+    position: relative;
+    left: -40%;
+    top: 5%;
+    .ant-btn {
+      color: #fefefe;
+    }
+  }
+}
+
+.wrapper-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  padding: 8% 60px;
+  gap: 50px;
+
+  .title {
+    .primary-title {
+      color: #001a4b;
+      text-align: center;
+    }
+  }
+
+  .carousel-cards {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .slick-slider.slick-initialized {
+    width: 100%;
+    height: 100%;
+  }
+
+  .slick-list {
+    width: 100%;
+    height: 100%;
+  }
+
+  .slick-track {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    padding: 0% 3%;
+  }
+
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 100%;
+    padding: 0 20px;
+  }
+
+  .slick-slide.slick-active.slick-current {
+    display: flex;
+    width: 350px;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .card {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #fefefe;
+    border: 1px solid #f2f2f2;
+    box-sizing: border-box;
+    box-shadow: 11px 8px 4px rgba(0, 0, 0, 0.04);
+    border-radius: 34px;
+    width: 100%;
+    height: 656px;
+    padding: 5% 45px;
+  }
+}
+.img-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    display: flex;
+    height: 152px;
+    width: 176px;
+  }
+  .paragraphs {
+    font-weight: bold;
+    font-size: 24px;
+    color: #ff5c64;
+    margin-top: 10px;
+  }
+  .short-texts {
+    font-size: 14px;
+    line-height: 19px;
+    color: #001a4b;
+  }
+}
+.text-mid {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+
+  img {
+    line-height: 25px;
+  }
+  .short-texts {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #001a4b;
+    margin-top: 10px;
+  }
+}
+.text-bottom {
+  .paragraphs {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: #00027a;
+  }
+}
+
+@media (max-width: $break-point-mobile) {
+  .CardsTeaching {
+    background-image: none;
+    height: 920px !important;
+    background-color: #00027a;
+
+    .box-button {
+      top: 3%;
+    }
+
+    .wrapper-cards {
+      display: flex;
+      justify-content: space-evenly;
+      height: 100%;
+      align-items: center;
+      padding: 10% 10px;
+      gap: 20px;
+
+      .primary-title {
+        color: $background-secondary;
+        padding: 0px 5%;
+      }
+
+      .slick-arrow {
+        display: none !important;
+      }
+
+      .card {
+        width: 315px !important;
+        height: 650px !important;
+        padding: 0% 15px !important;
+      }
+
+      .slick-dots {
+        bottom: -10px;
+      }
+
+      .slick-dots li button:before {
+        font-size: 16px;
+        opacity: 0.6;
+        color: #fefefe;
+      }
+      li.slick-active button:before {
+        opacity: 1;
+        color: #f2f2f2;
+      }
+
+      .slick-dots li button:before {
+        font-size: 16px;
+        line-height: 20px;
+        color: #fefefe;
+      }
+    }
+  }
+}
